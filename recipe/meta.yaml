@@ -19,6 +19,7 @@ build:
 requirements:
   host:
     - hatchling
+    - hatch-fancy-pypi-readme >=22.4.0
     - pip
     - python >=3.7
   run:
@@ -28,12 +29,17 @@ requirements:
     - typing-extensions
 
 test:
+  source_files:
+    - tests
   imports:
     - hatch_fancy_pypi_readme
   commands:
     - pip check
+    - hatch_fancy_pypi_readme --help
+    - pytest -vvv --capture=tee-sys tests
   requires:
     - pip
+    - pytest
 
 about:
   home: https://github.com/hynek/hatch-fancy-pypi-readme
