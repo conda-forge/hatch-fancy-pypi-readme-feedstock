@@ -28,12 +28,17 @@ requirements:
     - typing-extensions
 
 test:
+  source_files:
+    - tests
   imports:
     - hatch_fancy_pypi_readme
   commands:
     - pip check
+    - hatch-fancy-pypi-readme --help
+    - pytest -vvv --capture=tee-sys tests
   requires:
     - pip
+    - pytest
 
 about:
   home: https://github.com/hynek/hatch-fancy-pypi-readme
