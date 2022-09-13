@@ -30,6 +30,7 @@ requirements:
 test:
   source_files:
     - AUTHORS.md
+    - CHANGELOG.md
     - pyproject.toml
     - src
     - tests
