@@ -30,6 +30,7 @@ requirements:
 test:
   source_files:
     - AUTHORS.md
+    - src
     - tests
   imports:
     - hatch_fancy_pypi_readme
