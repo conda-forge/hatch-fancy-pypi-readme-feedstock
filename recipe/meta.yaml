@@ -43,6 +43,7 @@ test:
     - hatch-fancy-pypi-readme --help
     - pytest -vvv --capture=tee-sys tests
   requires:
+    - build
     - pip
     - pytest
 
