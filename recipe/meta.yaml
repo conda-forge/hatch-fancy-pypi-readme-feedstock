@@ -33,6 +33,7 @@ test:
     - CHANGELOG.md
     - LICENSE.txt
     - pyproject.toml
+    - README.md
     - src
     - tests
   imports:
