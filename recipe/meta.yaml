@@ -30,6 +30,7 @@ requirements:
 test:
   source_files:
     - AUTHORS.md
+    - pyproject.toml
     - src
     - tests
   imports:
