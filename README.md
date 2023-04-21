@@ -1,11 +1,11 @@
-About hatch-fancy-pypi-readme
-=============================
+About hatch-fancy-pypi-readme-feedstock
+=======================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hatch-fancy-pypi-readme-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hynek/hatch-fancy-pypi-readme
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hatch-fancy-pypi-readme-feedstock/blob/main/LICENSE.txt)
 
 Summary: Fancy PyPI READMEs with Hatch
 
