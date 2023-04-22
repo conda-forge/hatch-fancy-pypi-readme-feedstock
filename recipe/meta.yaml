@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - hatch-fancy-pypi-readme=hatch_fancy_pypi_readme.__main__:main
 
@@ -43,7 +43,7 @@ test:
     - hatch-fancy-pypi-readme --help
     - pytest -vvv --capture=tee-sys tests
   requires:
-    - build
+    - python-build
     - pip
     - pytest
 
