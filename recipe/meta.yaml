@@ -6,13 +6,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hatch_fancy_pypi_readme-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hatch_fancy_pypi_readme-{{ version }}.tar.gz
   sha256: 44dd239f1a779b9dcf8ebc9401a611fd7f7e3e14578dcf22c265dfaf7c1514b8
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - hatch-fancy-pypi-readme=hatch_fancy_pypi_readme.__main__:main
 
@@ -20,10 +20,10 @@ requirements:
   host:
     - hatchling
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - hatchling
-    - python >=3.7
+    - python >={{ python_min }}
     - tomli
     - typing-extensions
 
@@ -46,6 +46,7 @@ test:
     - python-build
     - pip
     - pytest
+    - python {{ python_min }}
 
 about:
   home: https://github.com/hynek/hatch-fancy-pypi-readme
