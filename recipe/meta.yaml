@@ -1,5 +1,5 @@
 {% set name = "hatch-fancy-pypi-readme" %}
-{% set version = "24.1.0" %}
+{% set version = "25.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hatch_fancy_pypi_readme-{{ version }}.tar.gz
-  sha256: 44dd239f1a779b9dcf8ebc9401a611fd7f7e3e14578dcf22c265dfaf7c1514b8
+  sha256: 9c58ed3dff90d51f43414ce37009ad1d5b0f08ffc9fc216998a06380f01c0045
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   entry_points:
     - hatch-fancy-pypi-readme=hatch_fancy_pypi_readme.__main__:main
 
