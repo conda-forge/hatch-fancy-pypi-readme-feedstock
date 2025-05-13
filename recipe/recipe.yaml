@@ -50,6 +50,7 @@ tests:
         - python-build
         - pytest
         - python ${{ python_min }}.*
+        - wheel
     script:
       - hatch-fancy-pypi-readme --help
       - pytest -vvv --capture=tee-sys tests
