@@ -25,7 +25,6 @@ requirements:
     - hatchling
     - python >={{ python_min }}
     - tomli
-    - typing-extensions
 
 test:
   source_files:
